@@ -1,57 +1,54 @@
 <p align="center">
-<img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
-</p>
-
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+<img width="378" alt="image" src="https://github.com/nkgarrett/NSG-Inspecting-Traffic/assets/156832893/5c77bf9a-8d0b-48cf-bf0e-50c3387964ab">
 
 
-<h2>Video Demonstration</h2>
+# Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines
 
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
 
-<h2>Environments and Technologies Used</h2>
+## Environments and Technologies Used
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
-- Wireshark (Protocol Analyzer)
+**Microsoft Azure (Virtual Machines/Compute)**
+**Remote Desktop**
+**Various Command-Line Tools**
+**Various Network Protocols (SSH, RDP, DNS, HTTP/S, ICMP)**
+**Wireshark (Protocol Analyzer)**
 
-<h2>Operating Systems Used </h2>
+### Operating Systems Used
 
-- Windows 10 (22H2)
-- Ubuntu Server 20.04
+**Windows 10 (22H2)**
 
-<h2>High-Level Steps</h2>
+**Ubuntu Server 20.04**
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+## High-Level Steps
 
-<h2>Actions and Observations</h2>
+1. **Create Azure Virtual Machines**
+2. **Configure Network Security Groups (NSGs)**
+3. **Install Wireshark on VMs**
+4. **Observe Traffic Using Wireshark**
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## Actions and Observations
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### Step 1: Create Azure Virtual Machines
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+1. Create a Windows 10 Virtual Machine (VM) on Azure.
+2. Create a Ubuntu Server 20.04 Virtual Machine on Azure.
+
+### Step 2: Configure Network Security Groups (NSGs)
+
+1. Define NSG rules to allow/deny traffic between VMs.
+2. Associate NSGs with VMs.
+
+### Step 3: Install Wireshark on VMs
+
+1. Connect to Windows 10 VM via Remote Desktop.
+2. Install Wireshark on Windows 10 VM.
+3. Connect to Ubuntu Server VM via SSH.
+4. Install Wireshark on Ubuntu Server VM.
+
+### Step 4: Observe Traffic Using Wireshark
+
+1. Launch Wireshark on both VMs.
+2. Filter traffic by protocol (e.g., ICMP, SSH, RDP, DNS).
+3. Initiate traffic between VMs (e.g., ping, SSH connection, RDP session).
+4. Observe captured traffic in Wireshark.
+5. Analyze traffic patterns and verify NSG rules effectiveness.
